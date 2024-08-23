@@ -1,0 +1,27 @@
+{
+  "files": {
+    "main.css": "/Birthday/static/css/main.bd714580.css",
+    "main.js": "/Birthday/static/js/main.47b779ec.js",
+    "static/js/453.e28959d5.chunk.js": "/Birthday/static/js/453.e28959d5.chunk.js",
+    "static/media/mark5.jpg": "/Birthday/static/media/mark5.31f284fddb1ab9a90d47.jpg",
+    "static/media/mark4.jpg": "/Birthday/static/media/mark4.62012f02e4de92ea7b8a.jpg",
+    "static/media/heart.png": "/Birthday/static/media/heart.c48939462095c2f9f646.png",
+    "static/media/mark2.jpg": "/Birthday/static/media/mark2.c25fa63d7e2b95d1b3b8.jpg",
+    "static/media/song3.mp3": "/Birthday/static/media/song3.9929cbd7d74fd3ca0b16.mp3",
+    "static/media/dino2.gif": "/Birthday/static/media/dino2.e4afb5c81176f3b221e6.gif",
+    "static/media/mark1.jpg": "/Birthday/static/media/mark1.8cf66c0c88f9f4091163.jpg",
+    "static/media/mark3.jpg": "/Birthday/static/media/mark3.447f494dfc3f3073e5b8.jpg",
+    "static/media/back3.png": "/Birthday/static/media/back3.ea13113dc0622fa4f384.png",
+    "static/media/dino3.gif": "/Birthday/static/media/dino3.c827d6011acc8eae320a.gif",
+    "static/media/mark6.jpg": "/Birthday/static/media/mark6.4aa87b6d110e665e1d19.jpg",
+    "static/media/loading.gif": "/Birthday/static/media/loading.33cb994c8ce164926a35.gif",
+    "index.html": "/Birthday/index.html",
+    "main.bd714580.css.map": "/Birthday/static/css/main.bd714580.css.map",
+    "main.47b779ec.js.map": "/Birthday/static/js/main.47b779ec.js.map",
+    "453.e28959d5.chunk.js.map": "/Birthday/static/js/453.e28959d5.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.bd714580.css",
+    "static/js/main.47b779ec.js"
+  ]
+}
