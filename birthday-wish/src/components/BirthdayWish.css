@@ -1,0 +1,310 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Kalam:wght@300;400;700&family=Permanent+Marker&family=Quicksand:wght@300..700&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Handlee&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Kalam:wght@300;400;700&family=Permanent+Marker&family=Quicksand:wght@300..700&family=Reenie+Beanie&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+.birthday-wish-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-image: linear-gradient(to top, #dbdcd7 0%, #dddcd7 24%, #e2c9cc 30%, #e7627d 46%, #b8235a 59%, #801357 71%, #3d1635 84%, #1c1a27 100%);
+    color: #333;
+    position: relative;
+    overflow: hidden; 
+}
+
+.start {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    margin-top: 16.5%;
+    
+}
+
+.loading-image {
+    width: 150px; 
+    height: 150px;
+}
+
+span {
+    color: black
+}
+.start img {
+    margin-left: 15%;
+    animation: fadeIn 2s ease-in-out;
+   
+}
+
+.birthday-wish-container img {
+    width:150px;
+    height: 150px;
+}
+
+.head-img img {
+    width: 70%;
+    height: auto;
+    margin-left: 17%;
+   
+}
+
+h1 {
+    font-size: 3rem;
+    color: #1c1a27; /* Darker purple shade */
+    animation: fadeIn 2s ease-in-out, glow 1.5s ease-in-out infinite;
+    font-family: "Kalam", cursive;
+    margin-bottom: 20px;
+    
+}
+
+p {
+    font-size: 1.5rem;
+    font-family: "Handlee", cursive;
+    text-align: center; /* Center the text within the paragraph */
+    margin: 0 auto;
+    width: 75%;
+    animation: fadeIn 2s;
+}
+
+/* Heart styles */
+.heart-container {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 100vh; /* Extend container to viewport height */
+}
+
+.heart {
+    position: absolute;
+    bottom: -50px; /* Start slightly below the container */
+    width: 50px;
+    height: 50px;
+    background-image: url('../../public/heart.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    opacity: 0;
+    animation: riseUp 10s ease-in-out forwards; /* Increase duration to 8s */
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes riseUp {
+    0% {
+        transform: translateY(100%);
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        transform: translateY(-200vh); /* Move hearts beyond the top of the viewport */
+        opacity: 0;
+    }
+}
+
+/*@keyframes glow {
+    0% {
+        text-shadow: 0 0 1px #1c1a27, 0 0 2px #1c1a27, 0 0 3px #1c1a27;
+    }
+ 50% {
+        text-shadow: 0 0 2px #1c1a27, 0 0 4px #1c1a27, 0 0 6px #1c1a27;
+    }
+    100% {
+        text-shadow: 0 0 1px #1c1a27, 0 0 2px #1c1a27, 0 0 3px #1c1a27;
+    }
+}*/
+
+/* Button styles */
+.reveal-button {
+    padding: 10px 20px;
+    font-size: 1.5rem;
+    font-family: "Kalam", cursive;
+    color: white;
+    background-color: #e7627d; /* Match the button color with the gradient */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    animation: fadeIn 2s ease-in-out;
+}
+
+.reveal-button:hover {
+    background-color: #b8235a; /* Darker shade for hover effect */
+}
+
+.back-img img{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 40%; /* Adjust the size of the background image */
+    height: auto;
+    z-index: 0; /* Place the background image under the text */
+    opacity: 0.3; /* Optional: Adjust opacity to make the text stand out more */
+}
+.marquee-wrapper {
+    position: absolute;
+    right: 10px;
+    bottom: 0;
+    width: 120px; /* Set the width of the marquee area */
+    overflow: hidden; /* Hide any overflow to make the scrolling seamless */
+    height: 100vh; /* Ensure the wrapper covers the full height of the screen */
+    z-index: 1;
+    opacity: 0.5;
+}
+
+.marquee-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px; 
+    animation: marquee 100s linear infinite; 
+}
+
+.marquee-container img {
+    width: 120px; 
+    height: auto;
+}
+
+@keyframes marquee {
+    0% {
+        transform: translateY(100%);
+    }
+    100% {
+        transform: translateY(-100%);
+    }
+}
+
+
+@media (max-width: 768px) {
+
+    .birthday-wish-container {
+        height: 100vh;
+        padding: 10px;
+        position: relative; /* Ensure proper layering */
+    }
+
+    h1 {
+        font-size: 2rem; /* Smaller font size for mobile */
+    }
+
+    p {
+        font-size: 1.2rem; /* Adjusted font size for readability on smaller screens */
+        width: 90%; /* Reduce the width for better readability on mobile */
+    }
+
+    .birthday-wish-container img {
+        width: 150px; /* Reduce image size on smaller screens */
+        height: 150px;
+    }
+
+    .start img {
+        margin-left: 15%; /* Center the image on mobile */
+        width: 150px; /* Adjust the size of the dinosaur image */
+        height: 150px;
+    }
+
+    .start {
+        margin-top: 20%; 
+        gap: 30px; /* Reduce the gap between elements */
+       /* Adjust the margin to center the content better */
+    }
+
+    .reveal-button:hover {
+        background-color: #b8235a; /* Darker shade for hover effect */
+    }
+    
+
+    .reveal-button {
+        padding: 8px 16px; /* Smaller padding for the button */
+        font-size: 1.2rem; /* Adjust font size */
+    }
+
+    .back-img img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover; /* Ensure the image covers the full container */
+        z-index: 0; /* Ensure it stays behind the text */
+        opacity: 0.2; /* Adjust opacity if needed */
+    }
+
+    /* Heart container */
+    .heart-container {
+        height: 80vh; /* Adjust container height on mobile */
+    }
+
+    .heart {
+        width: 40px; /* Adjust heart size */
+        height: 40px;
+    }
+
+    .marquee-wrapper {
+        display: none;
+    }
+}
+
+/* Media Query for devices with max-width of 480px (small mobile devices) */
+@media (max-width: 480px) {
+
+    h1 {
+        font-size: 1.5rem; /* Smaller font size for small mobile screens */
+    }
+
+    p {
+        font-size: 1rem; /* Further reduce font size for readability */
+        width: 95%; /* Make the text take up more space */
+    }
+
+    .birthday-wish-container img {
+        width: 120px; /* Further reduce image size */
+        height: 120px;
+    }
+
+    .start img {
+        width: 120px; /* Adjust dinosaur image size */
+        height: 120px;
+    }
+
+    .start {
+        gap: 20px; /* Further reduce the gap between elements */
+        margin-top: 47%; /* Adjust margin */
+    }
+
+    .reveal-button:hover {
+        background-color: #b8235a; /* Darker shade for hover effect */
+    }
+    
+
+    .reveal-button {
+        padding: 6px 12px; /* Smaller padding for the button */
+        font-size: 1rem; /* Further reduce font size */
+    }
+
+    .back-img img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover; /* Ensure the image covers the full container */
+        z-index: 0; /* Ensure it stays behind the text */
+        opacity: 0.2; /* Adjust opacity if needed */
+    }
+
+    .heart {
+        width: 30px; /* Further adjust heart size */
+        height: 30px;
+    }
+
+    .marquee-wrapper {
+        display: none;
+    }
+}
